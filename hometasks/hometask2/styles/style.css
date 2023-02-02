@@ -1,0 +1,18 @@
+table{
+    border: 1px solid black;
+    margin: 50px;
+}
+
+table tr td{
+    border: 1px solid  black;
+}
+
+table img{
+    width: 50px;
+    height: 30px;
+}
+
+#firstRowOfTable{
+    font-weight: bold; 
+    text-align: center;
+}
