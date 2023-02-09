@@ -1,0 +1,33 @@
+.redRectangle{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.greenRectangle{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    transition: 1s linear 0s;
+    transform-origin: center;
+   
+}
+.greenRectangle:hover{
+    width: 300px;
+    height: 300px; 
+    transform: rotate(-45deg);
+}
+
+.blueRectangle{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
