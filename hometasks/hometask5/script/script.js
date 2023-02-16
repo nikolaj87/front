@@ -30,7 +30,7 @@ else
 //5 Создайте массив из строк, чисел, NaN и объектов. Пример: ['hello', 1, { name: 'John' }, 'world', 2, { name: 'Jane' }, NaN]
 //Задача 1
 //Пройдитесь по массиву циклом for и выведите в консоли, чем является каждый элемент массива: строкой, числом или ни тем, ни другим (используя функции isNaN и typeof).
-const arr = ['hello', 1, { name: 'John' }, 'world', 2, { name: 'Jane' }, NaN]
+const arr = ['hello', 1, { name: 'John' }, 'world', 3, { name: 'Jane' }, NaN]
 for(let i = 0; i < arr.length; i++){
     console.log(`элемент массива ${i} это ${typeof(arr[i])}`);
 }

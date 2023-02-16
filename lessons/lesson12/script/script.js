@@ -64,16 +64,48 @@
 //     }  
 // }
 //     console.log(sumOfEl1);
-//     console.log(value_1);    
+//     console.log(value_1);  
 
-    const check = {
-        name: "John",
-        age: 37
-    }
-    console.log(`${person.age}`)
 
-    const product = {
-        name: "milk",
-        price: 2,
-        size: "pack"
+// let a = [1,2,3,4];
+// let b = a;
+// function check() {
+//     const num = prompt("write your namber")
+//     if(num % 2 == 0)
+//     console.log("Да")
+//     else 
+//     console.log("Нет")
+// }
+// check()
+
+// function print(str){
+//     console.log(str);
+// }
+// print("напиши имя")
+
+// function triangle(a,b){
+//    return Math.sqrt(a**2+b**2)
+// }
+// console.log(triangle(3,3));
+//============================== 
+
+
+const myArr = function newArray(a, b){
+    let arr = [];
+    for(let i=a; i<=b; i++ ){
+        arr.push(i);
     }
+    return arr;
+ }
+
+ console.log(myArr(3,8))
+
+// const obj = {
+//     name: "koli",
+//     age: setName(33)
+// }
+
+// function setName(a){
+//     return a+1;
+// }
+// console.log(obj)
