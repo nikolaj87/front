@@ -34,7 +34,7 @@ const div = document.querySelector(".main")
 const paragraphs = ["Day1", "Day2", "Day3", "Day4"]
 
 
-for(let i=0; i<paragraphs.length; i++){
+for( let i=0; i<paragraphs.length; i++){
         div.append(my(paragraphs[i]));
 }
 
