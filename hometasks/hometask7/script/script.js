@@ -63,7 +63,6 @@ function myFunction(n, m){
     for(let i = n; i <= m; i++ ){
         if(i % 2 == 0 ){
             odd = odd + i;
-            console.log("я тут")
         }
         else
             even = even + i;    
