@@ -1,8 +1,8 @@
 // 1 Написать цикл, который создает множество параграфов с каждым десятым числом в промежутке от 100 до 50 (т.е. 100, 90, 80, 70, 60, 50). Добавить созданные параграфы в div с классом numbers.
 const divNumbers = document.querySelector("div")
-for(i=100; i>=50; i-=10){
+for(i=10; i>=5; i--){
     const parag = document.createElement("p")
-    parag.innerText = i
+    parag.innerText = i*10
     divNumbers.append(parag)
 }
 
@@ -31,10 +31,15 @@ const objarr = [
         age: 34
     },
     {
+        firstname: "babyBear",
+        lastname: "bear",
+        age: 4
+    },
+    {
         firstname: "Masha",
         lastname: "girl",
         age: 10
-    },
+    }
 ]
 for(i = 0; i<objarr.length; i++){
     if(objarr[i].age >= 18){

@@ -1,0 +1,94 @@
+.flashcards-app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.input-section{
+        text-align: center;
+}
+
+label{
+        font-weight: bold;
+}
+
+form{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+}
+
+input[type=text]{
+        padding: 5px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        border: none;
+}
+
+input[type=text]:focus{
+        outline: none; 
+        box-shadow: 0 4px 2px rgba(0,0,0,0.2);
+}
+
+form input{
+        margin-bottom: 10px;
+        margin-top: 5px;
+}
+button{
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background-color: #cccccc;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.4s ease-in-out;
+}
+button:hover{
+        background-color: #8b8b8b;
+        transform: scale(1.01);
+
+
+}
+
+.cards-section {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+}
+
+.card{
+        width: 120px;
+        height: 200px;
+        margin: 20px;
+        position: relative;
+}
+
+.card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease-in-out;
+}
+.card-back{
+        transform: rotateY(180deg);
+}
+.card:hover .card-front{
+        transform: rotateY(180deg);
+}
+.card:hover .card-back{
+        transform: rotateY(0);
+}

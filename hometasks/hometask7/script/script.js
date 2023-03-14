@@ -1,10 +1,11 @@
 // 1 Напишите функцию, которая принимает два числовых аргумента и возвращает наименьшее из них.
 
 function minFound (a, b){
-    if (a < b)
+    if (a < b) {
         return a;
-    else
+    } else {
         return b;
+    }
 }
 
 console.log(minFound(1,22))
@@ -31,7 +32,7 @@ maxToMinPrint (41, 41)
 
 // 3 Напишите функцию power, которая принимает два числовых аргумента (основание степени и саму степень) и возвращает число в указанной степени. Значение степени должно быть указано по умолчанию 2.
 
-function power (a, b) {
+function power (a, b = 2) {
     return a**b;
 }
 
@@ -50,25 +51,38 @@ console.log(count (2));
 
 // 5 Напишите функцию, которая принимает два числовых аргумента n и m и считает сумму четных чисел и нечетных чисел от n до m. Суммы выведите в консоль (в начале сумму четных чисел, а затем сумму нечетных).
 
-function myFunction(n, m){
-    
-    let even = 0;
-    let odd = 0;
-    if (m < n) {
-        let temp = m;
-        m = n;
-        n = temp;
-    }
-
-    for(let i = n; i <= m; i++ ){
-        if(i % 2 == 0 ){
-            odd = odd + i;
-        }
-        else
-            even = even + i;    
-    }
-    console.log(even);
-    console.log(odd);
+function mySum (n, m){
+    let sum = n + m
 }
 
-myFunction(3, 1)
+
+
+
+
+
+
+
+
+
+// function myFunction(n, m){
+    
+//     let even = 0;
+//     let odd = 0;
+//     if (m < n) {
+//         let temp = m;
+//         m = n;
+//         n = temp;
+//     }
+
+//     for(let i = n; i <= m; i++ ){
+//         if(i % 2 == 0 ){
+//             odd = odd + i;
+//         }
+//         else
+//             even = even + i;    
+//     }
+//     console.log(even);
+//     console.log(odd);
+// }
+
+// myFunction(3, 1)
